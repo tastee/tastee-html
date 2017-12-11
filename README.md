@@ -8,7 +8,9 @@ Plug-in for Tastee-core (https://github.com/tastee/tastee-core) that allow you t
 
 If you want to use this plugin, you can run tastee with this option :
 
+```
 tastee --extract-from html <your_html_file>
+```
 
 If you  run this command with this option and this file :
 
