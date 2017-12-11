@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<pre class="tastee">//savor search_tastee.yaml</pre>
+<pre class="tastee">go to 'https://www.google.fr'</pre>
+<pre class="tastee">fill 'lst-ib' field with 'https://tastee.github.io/'</pre>
+<pre class="tastee">click on '#tsf > div.tsf-p > div.jsb > center > input[type="submit"]:nth-child(1)'</pre>
+<pre class="tastee">check that '//*[@id="rso"]/div/div/div[1]/div/div/h3/a' is equal to 'Tastee — test framework : test made Natural'</pre>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
