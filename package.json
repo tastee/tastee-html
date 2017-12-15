@@ -7,7 +7,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
-    "test": "mocha -r ts-node/register specs/*.spec.ts"    
+    "test": "mocha -r ts-node/register specs/*.spec.ts"
   },
   "repository": {
     "type": "git",
