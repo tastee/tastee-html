@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- "7"
-- "8"
+- '7'
+- '8'
 before_script:
 - npm install
 script: npm run-script build && npm test
@@ -9,7 +9,7 @@ deploy:
   provider: npm
   email: tastee.is.good@gmail.com
   api_key:
-    secure: oIOL8YlxwkN8pf0Vqu5T9q9Dq6q+mQWiM2nsoY2Dprx7QSzC/z7Fn25f22DqJ+5SezFTaSNRecN9EXdp+CYiLwDOSDZ4w434lYpVI1F0dOkk7uljvZnmZI/XunqBcZlP8WrJ4as8G8atbS7nqCnP5bna7EKtvuOH/elovdCNwCF6uwg4EPZBobZBI6SsA1IBiUN3PSxmyqwkzmz/K9v53z+6nl86na9EBYH5U94nIkqHPlNNExuITrt8FRKrFzant3mEjTU8c2jBnyoGftlu1sXkEKvONTC7Yqavhzfl4RmLPwCZZfZ4Ya3Z55i5kpd0nYRkPSVM0Md8I7d/0+LFL75nxzs0maX0VtCrpvkseoIC/4Md/J2NDJ7wp2NPfm6NPgSWmt2W/0sYmEKkbdjLW6fKl3e4gl91rf5/tuf24e3l9z2c3n+SWUba+hZWxpJ4IbFv7102G2pqlB+rFBo0ppHiSqB2tSQuJAAwj9FNgCPMvW+HpGoiezKYZjYtI5Pqk1wxrfkVTAmaH/0cN9Ny/gjR7pF4fg6yuu01QeehpSmwrypjQfPQCfNKWdj9oWzPce5aWL8CVs+gEaHRtZeQsN29LDpopWlLmF5VSKQUjp7j9599LzFRJ1AzQMPXyXNZoBmjHC9rIoWaGZL/elUc8ym4IBqIc5w1g8a39rIstTI=
+    secure: ORvbbALCJMC0LoydXYn4xFVrqGczxKYflQjeoP53FcPAnU5Kyk3PwIuXNYUjdW1JeibNbd5lhdAhtRuMFMjz1SiJdw0UVkoXahxfNPFz/EocUpps2MWKNc8IXfqLXN6rwSMQk/fmm2jLtgjafFri1LySIdNA9bzar2VSe0+Ikj6yV5LpnzZCJuKxrDaox/rWaPy0goRLDFD3IAqJfqLvAmfIAKBotNUdUgn4aJYrqGBla6UieO5c9XVQiBwXJDn/JyKpQuf2PQr6Oe17/Ppcy9+3cgTArmJULCKpgxf4gOJ33eonlbHpo3CV7FJ3RN/1F23y0UGZ1FLDuBuHhnI7c1MN7RZ/DYjwyd8+//5gyipYGCHzNg53im2bHA7YKE+wAqzFJmAlFiWpQMfUvwujrmrfjbRU2hpkQ8HiXIJ8QPol+9qqkXxc+ZaqaK3T92P38DaLIelzi/psYwwO3Ah7pBY0ATA9EMnYsT7ijkzWIeNJPA8bN7mV4iKt5TDcIX6JzVA5XrWZEjCtBl20uoU5nbGSh8ypGDDOewo1+WCM6CTXqDFgQ8V4+1VdjeuIKjpkaqoXyDiArmLL8+fjwcLz03dRwQlLFNO4OrmxZ1xPKTweN+d0YRUdn5V8c37N5rRtIWYMLapP5qZRUh+R7EFY5SLqYvMvtVC5KIdmots9Wi0=
   on:
     tags: true
     repo: tastee/tastee-html
