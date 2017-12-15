@@ -6,7 +6,7 @@ import 'mocha';
 describe('ExtractTasteeCode class', () => {
 
   it("should return an array with nothing", () => {
-    let instructions = ExtractTasteeCode.extract('./specs/data/no_tastee_lines_in_file.tee')
+    let instructions = ExtractTasteeCode.extract('./specs/data/no_tastee_lines_in_file.html')
     expect(instructions).to.be.empty;
   });
 
@@ -15,7 +15,7 @@ describe('ExtractTasteeCode class', () => {
   });
 
   it('should return array with tastee code when we have many pre balise', () => {
-    let instructions = ExtractTasteeCode.extract('./specs/data/valide_html_and_tastee_file.tee')
+    let instructions = ExtractTasteeCode.extract('./specs/data/valide_html_and_tastee_file.html')
     expect(instructions).to.be.an('array').that.does.include("//savor search_tastee.yaml");
     expect(instructions).to.be.an('array').that.does.include("go to 'https://www.google.fr'");
     expect(instructions).to.be.an('array').that.does.include("fill 'lst-ib' field with 'https://tastee.github.io/'");
@@ -24,7 +24,7 @@ describe('ExtractTasteeCode class', () => {
   });
 
   it('should return array with tastee code when we have just on balise pre', () => {
-    let instructions = ExtractTasteeCode.extract('./specs/data/valide_html_and_tastee_file_with_on_block.tee')
+    let instructions = ExtractTasteeCode.extract('./specs/data/valide_html_and_tastee_file_with_on_block.html')
     expect(instructions).to.be.an('array').that.does.include("//savor search_tastee.yaml");
     expect(instructions).to.be.an('array').that.does.include("go to 'https://www.google.fr'");
     expect(instructions).to.be.an('array').that.does.include("fill 'lst-ib' field with 'https://tastee.github.io/'");
