@@ -12,7 +12,10 @@ export class ExtractTasteeCode {
         let data = fs.readFileSync(filePath.toString());
         let html = cheerio.load(data.toString());
         html('pre.tastee').each((idx, element) => {
-            instructions.push(html(element).text())
+            let data = html(element).text()
+            if (data) {
+                data.toString().split("\n").forEach(element => instructions.push(element.trim()));
+            }
         });
         return instructions;
     }
