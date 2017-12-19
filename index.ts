@@ -6,7 +6,6 @@ export class ExtractTasteeCode {
 
     static extract(filePath: String): Array<String> {
         let instructions = new Array<String>();
-        console.log(path.extname(filePath.toString()))
         if (path.extname(filePath.toString()) !== ".html") {
             throw new TasteeError("It's not a tastee file.");
         }
